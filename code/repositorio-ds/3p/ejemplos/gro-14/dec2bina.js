@@ -1,4 +1,4 @@
- class remStack {
+class Stack {
     constructor(){ 
         this.items=[];}
         push(element){
@@ -9,7 +9,7 @@
             return this.items.length == 0;
            };
         pop(){
-            return this.Stack.pop();
+            return this.items.pop();
            };
     }
     function divideBy2(decNumber){
