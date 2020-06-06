@@ -1,5 +1,6 @@
-function Queue(){
- items=[];
+class Queue {
+constructor(){
+ this.items=[];
  this.enqueue = enqueue;
  this.dequeue= dequeue;
  this.front= front;
@@ -7,23 +8,24 @@ function Queue(){
  this.size= size;
  this.print= print;
 }
-this.enqueue = function(element){
- items.push(element);
+}
+	enqueue = function(element){
+ this.items.push(element);
 };
-this.dequeue = function(){
- return items.shift();
+	dequeue = function(){
+ return this.items.shift();
 };
-this.front = function(){
- return items[0];
+	front = function(){
+ return this.items[0];
 };
-this.isEmpty = function(){
- return items.length == 0;
+	isEmpty = function(){
+ return this.items.length == 0;
 };
-this.size = function(){
- return items.length;
+	size = function(){
+ return this.items.length;
 };
-this.print = function(){
- console.log(items.toString());
+	print = function(){
+ console.log(this.items.toString());
 };
 
 let queue = new Queue();
